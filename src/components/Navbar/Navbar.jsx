@@ -77,6 +77,20 @@ const Navbar = () => {
             </ul>
         </div>
       </div>
+
+      {/*Menu movil */}
+         <div className={`md:hidden absolute w-full bg-purple-950 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+            <ul className='flex flex-col px-4 py-2'>
+                {navbarlinks.map((link)=>(
+                    <li key={link.id} className='py-2 text-center'>
+                        <a className='text-white hover:text-sky-200' 
+                        href={link.link} onClick={()=>setIsOpen(false)}> 
+                        {link.title} </a>
+                    </li>
+                ))}
+            </ul>
+         </div>
+
     </nav>
   )
 }
