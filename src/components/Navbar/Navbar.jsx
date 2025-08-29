@@ -34,7 +34,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav>
+    <nav className='fixed top-0 left-0 bg-purple-900 w-full bg-opacity-30 backdrop-blur-md z-50'>
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
          
          { /* Logo Navar */}
@@ -79,7 +79,7 @@ const Navbar = () => {
       </div>
 
       {/*Menu movil */}
-         <div className={`md:hidden absolute w-full bg-purple-950 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+         <div className={`md:hidden absolute w-full bg-purple-950 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
             <ul className='flex flex-col px-4 py-2'>
                 {navbarlinks.map((link)=>(
                     <li key={link.id} className='py-2 text-center'>
