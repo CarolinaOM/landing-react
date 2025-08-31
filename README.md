@@ -49,4 +49,4 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local.
     npm run dev
     ```
 
-    ![Princess Peach Showtime](assents/Proyecto.png)
+    ![Princess Peach Showtime](assets/Proyecto.png)
