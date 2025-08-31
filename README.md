@@ -1,12 +1,49 @@
-# React + Vite
+# 👑 Princess Peach Showtime! Fan Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una página web creada con React y Tailwind CSS para celebrar el lanzamiento del juego Princess Peach Showtime! y ofrecer a los fans un lugar con información sobre los personajes, escenarios y noticias.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Características
 
-## Expanding the ESLint configuration
+* **Página de Inicio:** Con información del juego, un botón para el tráiler y una descripción general.
+* **Páginas Temáticas:** Navegación a secciones detalladas de Personajes, Escenarios y Noticias usando React Router.
+* **Diseño Responsive:** Funciona en computadoras de escritorio y dispositivos móviles gracias a Tailwind CSS, con un menú de hamburguesa adaptativo.
+* **Animaciones:** Efectos de animación sutiles con Framer Motion para una experiencia de usuario más fluida y visualmente atractiva.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🛠️ Tecnologías Usadas
+
+* **React:** Biblioteca de JavaScript para la interfaz de usuario.
+* **Vite:** Entorno de desarrollo para React.
+* **Tailwind CSS:** Framework de CSS para un diseño rápido y flexible.
+* **React Router:** Para la navegación entre las diferentes páginas del sitio.
+* **Framer Motion:** Biblioteca para las animaciones y efectos de transición.
+
+---
+
+### ⚙️ Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local.
+
+1.  Clona el repositorio desde GitHub:
+    ```bash
+    git clone <URL del repositorio>
+    ```
+
+2.  Navega al directorio del proyecto:
+    ```bash
+    cd <nombre-del-proyecto>
+    ```
+
+3.  Instala las dependencias necesarias:
+    ```bash
+    npm install
+    ```
+
+4.  Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+
