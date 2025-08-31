@@ -48,3 +48,5 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local.
     ```bash
     npm run dev
     ```
+
+    ![Princess Peach Showtime](assents/Proyecto.png)
