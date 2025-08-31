@@ -2,6 +2,8 @@
 
 Una página web creada con React y Tailwind CSS para celebrar el lanzamiento del juego Princess Peach Showtime! y ofrecer a los fans un lugar con información sobre los personajes, escenarios y noticias.
 
+**[▶️ Ver Demo en Vivo](https://peach-showtime-page.netlify.app/)**
+
 ---
 
 ### ✨ Características
@@ -46,4 +48,3 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local.
     ```bash
     npm run dev
     ```
-
