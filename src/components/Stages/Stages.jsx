@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { slipeUp } from '../../Utility/animation';
+import { slideUp } from '../../Utility/animation'; 
 
-const stages = [
+const stages = [ 
   {
     name: "Teatro Destello",
     description: "El teatro principal donde comienza toda la aventura. Aquí, Peach debe recuperar el control de las obras para devolver la felicidad al lugar.",
@@ -21,17 +21,17 @@ const stages = [
   {
     name: "Escenario de Pastelería",
     description: "Un mundo lleno de dulces y pasteles. Peach debe usar su traje de pastelera para hornear pasteles gigantes y superar los obstáculos azucarados.",
-    color: "bg-pink-400"
+    color: "bg-pink-500"
   },
   {
     name: "Escenario de la Bahía",
     description: "Un mundo acuático donde Peach se convierte en una sirena para nadar y usar su voz para resolver acertijos.",
-    color: "bg-blue-400"
+    color: "bg-blue-500"
   },
   {
     name: "Escenario de los Cielos",
     description: "Un escenario en las nubes, donde Peach se transforma en una princesa de cuento de hadas para volar y luchar en el aire.",
-    color: "bg-sky-200"
+    color: "bg-sky-900"
   },
   {
     name: "Escenario de los Dinobabies",
@@ -40,13 +40,13 @@ const stages = [
   },
 ];
 
-const Escenarios = () => {
+const Stages = () => { 
   return (
-    <section id="escenarios" className="pt-32 py-20 px-4 md:px-10 lg:px-20 text-white min-h-screen">
+    <section id="stages" className="pt-32 py-20 px-4 md:px-10 lg:px-20 text-white min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-center text-4xl font-bold mb-10"
-          variants={slipeUp(0.2)}
+          variants={slideUp(0.2)}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.5 }}
@@ -59,7 +59,7 @@ const Escenarios = () => {
             <motion.div
               key={index}
               className={`p-6 rounded-lg shadow-lg ${stage.color}`}
-              variants={slipeUp(0.4 + index * 0.1)}
+              variants={slideUp(0.4 + index * 0.1)}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
@@ -74,4 +74,4 @@ const Escenarios = () => {
   );
 };
 
-export default Escenarios;
+export default Stages;

@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
-import { motion } from 'framer-motion';
-import { slipeUp, slipeInFromSide } from '../../Utility/animation';
+import React, { useState } from 'react';
 
-
-const navbarlinks = [
+const navbarLinks = [
     {
         id: 1,
         title: "Inicio",
@@ -14,17 +11,17 @@ const navbarlinks = [
     {
         id: 2,
         title: "Personajes",
-        link: "/personajes"
+        link: "/characters" // ✅ Enlace corregido
     },
     {
         id: 3,
         title: "Escenarios",
-        link: "/escenarios"
+        link: "/stages" // ✅ Enlace corregido
     },
     {
         id: 4,
-        title: "Noticias",
-        link: "/noticias"
+        title: "News",
+        link: "/news"
     },
 ];
 
@@ -38,14 +35,14 @@ const Navbar = () => {
     return (
         <nav className='fixed top-0 left-0 bg-purple-900 w-full bg-opacity-30 backdrop-blur-md z-50'>
             <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
-                {/* Logo Navbar */}
+                {/* Navbar Logo */}
                 <div>
                     <Link to="/">
                         <img src={Logo} alt='Logo del sitio' className='w-[100px]' />
                     </Link>
                 </div>
 
-                {/* Boton de hamburguesa - Visible solo en pantallas pequeñas */}
+                {/* Hamburger button - Visible on small screens only */}
                 <button onClick={toggleMenu} className='md:hidden text-white'>
                     <svg
                         className='w-6 h-6'
@@ -71,10 +68,10 @@ const Navbar = () => {
                     </svg>
                 </button>
 
-                {/* Navegación desktop - Oculta en pantallas pequeñas, visible en MD y arriba */}
+                {/* Desktop navigation - Hidden on small screens, visible on MD and above */}
                 <div className='hidden md:block'>
                     <ul className='flex sm:space-x-8 space-x-4'>
-                        {navbarlinks.map((link) => (
+                        {navbarLinks.map((link) => ( 
                             <li key={link.id}>
                                 <Link className='text-white sm:text-lg text-sm hover:text-sky-200 
                                 transition-transform hover:scale-110 transform inline-block duration-300'
@@ -85,10 +82,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/*Menu movil */}
+            {/* Mobile menu */}
             <div className={`md:hidden absolute w-full bg-purple-950 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
                 <ul className='flex flex-col px-4 py-2'>
-                    {navbarlinks.map((link) => (
+                    {navbarLinks.map((link) => ( 
                         <li key={link.id} className='py-2 text-center'>
                             <Link className='text-white hover:text-sky-200'
                                 to={link.link} onClick={() => setIsOpen(false)}>

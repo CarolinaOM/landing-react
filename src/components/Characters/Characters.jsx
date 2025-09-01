@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { slipeUp } from '../../Utility/animation';
+import { slideUp } from '../../Utility/animation';
 
 const characters = [
   {
@@ -41,17 +41,17 @@ const characters = [
   {
     name: "Peach Patinadora sobre Hielo",
     description: "Con sus patines, Peach desliza y realiza giros elegantes. Debe usar su agilidad para navegar por escenarios helados y superar obstáculos.",
-    color: "bg-cyan-300"
+    color: "bg-blue-900"
   },
 ];
 
-const Personajes = () => {
+const Characters = () => { 
   return (
-    <section id="personajes" className="pt-32 py-20 px-4 md:px-10 lg:px-20 text-white min-h-screen">
+    <section id="characters" className="pt-32 py-20 px-4 md:px-10 lg:px-20 text-white min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-center text-4xl font-bold mb-10"
-          variants={slipeUp(0.2)}
+          variants={slideUp(0.2)} 
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.5 }}
@@ -64,7 +64,7 @@ const Personajes = () => {
             <motion.div
               key={index}
               className={`p-6 rounded-lg shadow-lg ${character.color}`}
-              variants={slipeUp(0.4 + index * 0.1)}
+              variants={slideUp(0.4 + index * 0.1)} 
               initial="initial"
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
@@ -79,4 +79,4 @@ const Personajes = () => {
   );
 };
 
-export default Personajes;
+export default Characters;

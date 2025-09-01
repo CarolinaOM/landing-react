@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Noticias from "./components/Noticias/Noticias";
-import Personajes from "./components/Personajes/Personajes"; 
-import Escenarios from "./components/Escenarios/Escenarios"; 
+import News from "./components/News/News"; 
+import Characters from "./components/Characters/Characters"; 
+import Stages from "./components/Stages/Stages"; 
 import Fondo from "./assets/Fondo.png";
 
 function App() {
@@ -22,9 +22,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/noticias" element={<Noticias />} />
-          <Route path="/personajes" element={<Personajes />} />
-          <Route path="/escenarios" element={<Escenarios />} />
+          {}
+          <Route path="/news" element={<News />} /> 
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/stages" element={<Stages />} />
         </Routes>
       </div>
     </Router>
