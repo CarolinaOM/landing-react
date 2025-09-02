@@ -11,17 +11,17 @@ const navbarLinks = [
     {
         id: 2,
         title: "Personajes",
-        link: "/characters" // ✅ Enlace corregido
+        link: "/Characters" 
     },
     {
         id: 3,
         title: "Escenarios",
-        link: "/stages" // ✅ Enlace corregido
+        link: "/Stages" 
     },
     {
         id: 4,
-        title: "News",
-        link: "/news"
+        title: "Noticias",
+        link: "/News"
     },
 ];
 
